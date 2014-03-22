@@ -16,7 +16,7 @@ If you use rbenv, you should rehash:
 Usage: gmail-tool [OPTIONS] COMMAND [ARGS]
 
 Available commands:
-  compose
+  compose  Open a pre-filled compose message
   help     Displays help for a command
 
 Options:
