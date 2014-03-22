@@ -15,11 +15,9 @@ Gem::Specification.new do |s|
   s.licenses    = ['Apache License, Version 2.0']
 
   s.required_rubygems_version = ">= 1.3.6"
-  s.rubyforge_project         = "bundler"
 
-  s.add_development_dependency "rspec"
-
-  s.add_dependency "boson"
+  s.add_development_dependency "rspec", "~>2"
+  s.add_dependency "boson", "~>1.3"
 
   s.files        = Dir.glob("{bin,lib}/**/*") + %w(LICENSE)
   s.executables  = ['gmail-tool']
