@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/spadin/gmail-tool.svg?branch=master)](https://travis-ci.org/spadin/gmail-tool)
+
 # gmail-tool
 
 ## Installation
