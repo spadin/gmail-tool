@@ -2,10 +2,6 @@ require 'gmail_tool/compose/generate_compose_url'
 
 describe GmailTool::Compose::GenerateComposeUrl do
   describe '#compose_url' do
-    let(:options) {{
-      body: 'hello world!'
-    }}
-
     def compose_url(options={})
       described_class.new(options).execute
     end
