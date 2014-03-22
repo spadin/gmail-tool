@@ -1,6 +1,6 @@
 module GmailTool
   module Compose
-    class FormatParams
+    class FormatOptions
       def initialize(options)
         @options = options
       end

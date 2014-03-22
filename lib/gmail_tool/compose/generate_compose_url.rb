@@ -1,12 +1,11 @@
 require 'open-uri'
-require_relative 'format_params'
+require_relative 'format_options'
 
 module GmailTool
   module Compose
     class GenerateComposeUrl
-      def initialize(options={}, params_formatter=nil)
+      def initialize(options={})
         @options = default_options.merge(options)
-        @params_formatter = params_formatter || FormatParams
       end
 
       def execute
@@ -15,14 +14,14 @@ module GmailTool
 
       private
 
-      attr_reader :options, :params_formatter
+      attr_reader :options
 
       def query_params
-        encoded_query_string(gmail_formatted_options)
+        encoded_query_string(formatted_options)
       end
 
-      def gmail_formatted_options
-        params_formatter.new(options).execute
+      def formatted_options
+        FormatOptions.new(options).execute
       end
 
       def encoded_query_string(options)

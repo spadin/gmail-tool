@@ -1,6 +1,6 @@
-require 'gmail_tool/compose/format_params'
+require 'gmail_tool/compose/format_options'
 
-describe GmailTool::Compose::FormatParams do
+describe GmailTool::Compose::FormatOptions do
   def gmail_format_params(options)
     described_class.new(options).execute
   end
