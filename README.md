@@ -3,7 +3,26 @@
 ## Installation
 
     $ gem install gmail-tool
+    
+## Rbenv?
+
+If you use rbenv, you should rehash:
+
+    $ rbenv rehash
 
 ## Usage
 
+```
+Usage: gmail-tool [OPTIONS] COMMAND [ARGS]
+
+Available commands:
+  compose
+  help     Displays help for a command
+
+Options:
+  -h, --help  Displays this help message
+```
+
     $ gmail-tool compose --to="email@example.com" --subject="subject" --body="some text"
+
+This will call `open` on your system with a url to compose an email on Gmail.
